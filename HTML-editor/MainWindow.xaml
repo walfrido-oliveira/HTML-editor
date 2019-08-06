@@ -20,6 +20,9 @@
                 <Button Name="btnPrint" Click="BtnPrint_Click">
                     <Image Source="Resources/print.png" Height="23" Width="22" />
                 </Button>
+                <Button Name="btnSave" Click="BtnSave_Click">
+                    <Image Source="Resources/save.png" Height="23" Width="22" RenderTransformOrigin="0.5,0.522" />
+                </Button>
                 <Separator Width="2"/>
                 <Button Name="btnCut" Click="BtnCut_Click">
                     <Image Source="Resources/cut.png" Height="23" Width="22" />
@@ -34,74 +37,74 @@
                 <Button Name="btnBold" Click="BtnBold_Click">
                     <Image Source="Resources/bold.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnUnderline">
+                <Button Name="btnUnderline" Click="BtnUnderline_Click">
                     <Image Source="Resources/underline.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnItalic">
+                <Button Name="btnItalic" Click="BtnItalic_Click">
                     <Image Source="Resources/italic.png" Height="23" Width="22" />
                 </Button>
                 <Separator Width="2"/>
-                <Button Name="btnLeft">
+                <Button Name="btnLeft" Click="BtnLeft_Click">
                     <Image Source="Resources/align_left.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnCenter">
+                <Button Name="btnCenter" Click="BtnCenter_Click">
                     <Image Source="Resources/align_center.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnJustify">
+                <Button Name="btnJustify" Click="BtnJustify_Click">
                     <Image Source="Resources/align_justify.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnRight">
+                <Button Name="btnRight" Click="BtnRight_Click">
                     <Image Source="Resources/align_right.png" Height="23" Width="22" />
                 </Button>
                 <Separator Width="2"/>
-                <Button Name="btnIndent">
+                <Button Name="btnIndent" Click="BtnIndent_Click">
                     <Image Source="Resources/increase_indent.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnOutdent">
+                <Button Name="btnOutdent" Click="BtnOutdent_Click">
                     <Image Source="Resources/decrease_indent.png" Height="23" Width="22" />
                 </Button>
                 <Separator Width="2"/>
-                <Button Name="btnBullets">
+                <Button Name="btnBullets" Click="BtnBullets_Click">
                     <Image Source="Resources/bulleted_list.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnNumeric">
+                <Button Name="btnNumeric" Click="BtnNumeric_Click">
                     <Image Source="Resources/numbered_list.png" Height="23" Width="22" />
                 </Button>
                 <Separator Width="2"/>
-                <Button Name="btnBackColor">
+                <Button Name="btnBackColor" Click="BtnBackColor_Click">
                     <Image Source="Resources/select_background_color.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnForeColor">
+                <Button Name="btnForeColor" Click="BtnForeColor_Click">
                     <Image Source="Resources/select_color_text.png" Height="23" Width="22" />
                 </Button>
                 <Separator Width="2"/>
-                <Button Name="btnLink">
+                <Button Name="btnLink" Click="BtnLink_Click">
                     <Image Source="Resources/insert_link.png" Height="23" Width="22" />
                 </Button>
-                <Button Name="btnRemoveLink">
+                <Button Name="btnRemoveLink" Click="BtnRemoveLink_Click">
                     <Image Source="Resources/remove_link.png" Height="23" Width="22" />
                 </Button>
                 <Separator Width="2"/>
-                <Menu x:Name="menuFontSize" Background="White" >
-                    <MenuItem Header="Font Size"  Margin="0" Width="91">
-                        <MenuItem Header="1" />
-                        <MenuItem Header="2"/>
-                        <MenuItem Header="3"/>
-                        <MenuItem Header="4"/>
-                        <MenuItem Header="5"/>
-                        <MenuItem Header="6"/>
-                        <MenuItem Header="7"/>
+                <Menu x:Name="menuFontSize" Background="White" Width="63" >
+                    <MenuItem Header="Font Size"  Margin="0" Width="63" Height="29">
+                        <MenuItem Header="1" Click="MenuItem_Click" />
+                        <MenuItem Header="2" Click="MenuItem_Click_1"/>
+                        <MenuItem Header="3" Click="MenuItem_Click_2"/>
+                        <MenuItem Header="4" Click="MenuItem_Click_3"/>
+                        <MenuItem Header="5" Click="MenuItem_Click_4"/>
+                        <MenuItem Header="6" Click="MenuItem_Click_5"/>
+                        <MenuItem Header="7" Click="MenuItem_Click_6"/>
                     </MenuItem>
                 </Menu>
-                <Menu x:Name="menuFontFamily" Background="White"  >
-                    <MenuItem Header="Font Family"  Margin="0" Width="91">
-                        <MenuItem Header="Verdana" FontFamily="Verdana"/>
-                        <MenuItem Header="Arial" FontFamily="Arial"/>
-                        <MenuItem Header="Times New Roman" FontFamily="Times New Roman"/>
-                        <MenuItem Header="Currier New" FontFamily="Currier New"/>
-                        <MenuItem Header="Cambria" FontFamily="Cambria"/>
-                        <MenuItem Header="Tahoma" FontFamily="Tahoma"/>
-                        <MenuItem Header="Book Antiqua" FontFamily="Book Antiqua"/>
+                <Menu x:Name="menuFontFamily" Background="White" Width="73"  >
+                    <MenuItem Header="Font Family"  Margin="0" Width="84" Height="29">
+                        <MenuItem Header="Verdana" FontFamily="Verdana" Click="MenuItem_Click_7"/>
+                        <MenuItem Header="Arial" FontFamily="Arial" Click="MenuItem_Click_8"/>
+                        <MenuItem Header="Times New Roman" FontFamily="Times New Roman" Click="MenuItem_Click_9"/>
+                        <MenuItem Header="Currier New" FontFamily="Currier New" Click="MenuItem_Click_10"/>
+                        <MenuItem Header="Cambria" FontFamily="Cambria" Click="MenuItem_Click_11"/>
+                        <MenuItem Header="Tahoma" FontFamily="Tahoma" Click="MenuItem_Click_12"/>
+                        <MenuItem Header="Book Antiqua" FontFamily="Book Antiqua" Click="MenuItem_Click_13"/>
                     </MenuItem>
                 </Menu>
 
