@@ -1,0 +1,112 @@
+﻿<Window x:Class="HTML_editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HTML_editor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="826.771">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="701*"/>
+            <ColumnDefinition Width="114*"/>
+        </Grid.ColumnDefinitions>
+        <WebBrowser x:Name="webBrowser" HorizontalAlignment="Left" Height="384" Margin="0,35,0,0" VerticalAlignment="Top" Width="815" Grid.ColumnSpan="2"/>
+        <ToolBarTray Background="White" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <ToolBar x:Name="tooBar" Width="Auto" Height="Auto" Background="White" Margin="0,0,-806,-18" >
+                <Button Name="btnNew" Click="BtnNew_Click">
+                    <Image Source="Resources/new_file.png" Height="23" Width="22" RenderTransformOrigin="0.5,0.522" />
+                </Button>
+                <Button Name="btnPrint" Click="BtnPrint_Click">
+                    <Image Source="Resources/print.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Button Name="btnCut" Click="BtnCut_Click">
+                    <Image Source="Resources/cut.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnCopy" Click="BtnCopy_Click">
+                    <Image Source="Resources/copy.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnPaste" Click="BtnPaste_Click">
+                    <Image Source="Resources/paste.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Button Name="btnBold" Click="BtnBold_Click">
+                    <Image Source="Resources/bold.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnUnderline">
+                    <Image Source="Resources/underline.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnItalic">
+                    <Image Source="Resources/italic.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Button Name="btnLeft">
+                    <Image Source="Resources/align_left.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnCenter">
+                    <Image Source="Resources/align_center.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnJustify">
+                    <Image Source="Resources/align_justify.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnRight">
+                    <Image Source="Resources/align_right.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Button Name="btnIndent">
+                    <Image Source="Resources/increase_indent.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnOutdent">
+                    <Image Source="Resources/decrease_indent.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Button Name="btnBullets">
+                    <Image Source="Resources/bulleted_list.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnNumeric">
+                    <Image Source="Resources/numbered_list.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Button Name="btnBackColor">
+                    <Image Source="Resources/select_background_color.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnForeColor">
+                    <Image Source="Resources/select_color_text.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Button Name="btnLink">
+                    <Image Source="Resources/insert_link.png" Height="23" Width="22" />
+                </Button>
+                <Button Name="btnRemoveLink">
+                    <Image Source="Resources/remove_link.png" Height="23" Width="22" />
+                </Button>
+                <Separator Width="2"/>
+                <Menu x:Name="menuFontSize" Background="White" >
+                    <MenuItem Header="Font Size"  Margin="0" Width="91">
+                        <MenuItem Header="1" />
+                        <MenuItem Header="2"/>
+                        <MenuItem Header="3"/>
+                        <MenuItem Header="4"/>
+                        <MenuItem Header="5"/>
+                        <MenuItem Header="6"/>
+                        <MenuItem Header="7"/>
+                    </MenuItem>
+                </Menu>
+                <Menu x:Name="menuFontFamily" Background="White"  >
+                    <MenuItem Header="Font Family"  Margin="0" Width="91">
+                        <MenuItem Header="Verdana" FontFamily="Verdana"/>
+                        <MenuItem Header="Arial" FontFamily="Arial"/>
+                        <MenuItem Header="Times New Roman" FontFamily="Times New Roman"/>
+                        <MenuItem Header="Currier New" FontFamily="Currier New"/>
+                        <MenuItem Header="Cambria" FontFamily="Cambria"/>
+                        <MenuItem Header="Tahoma" FontFamily="Tahoma"/>
+                        <MenuItem Header="Book Antiqua" FontFamily="Book Antiqua"/>
+                    </MenuItem>
+                </Menu>
+
+            </ToolBar>
+        </ToolBarTray>
+
+    </Grid>
+</Window>
